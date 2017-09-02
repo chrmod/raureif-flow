@@ -1,0 +1,32 @@
+{
+  "name": "raureif-flow",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "raureif build",
+    "start": "raureif serve",
+    "test": "raureif test --ci",
+    "prepublish": "npm run build",
+    "prebuild": "npm run test"
+  },
+  "main": "dist/index.js",
+  "keywords": [
+    "raureif-addon"
+  ],
+  "files": [
+    "dist/*",
+    "!dist/node",
+    "!dist/polyfill.js"
+  ],
+  "devDependencies": {
+    "raureif": "2.0.2",
+    "yarn": "^0.27.5"
+  },
+  "peerDependency": {
+    "raureif": ">= 2.0.3"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "eslint-config-airbnb-flow": "^1.0.2",
+    "babel-preset-flow": "^6.23.0"
+  }
+}
