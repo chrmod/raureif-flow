@@ -1,5 +1,4 @@
 import flowPreset from 'babel-preset-flow';
-import eslintOptions from 'eslint-config-airbnb-flow/eslintrc.json';
 import FlowFilter from 'broccoli-flow';
 import flowtypePlugin from 'eslint-plugin-flowtype';
 
@@ -10,10 +9,10 @@ export default {
       flowPreset,
     ],
   },
-  eslintOptions: Object.assign({}, eslintOptions, {
+  eslintOptions: {
     // TODO: find a better way to set parser
     parser: require.resolve('babel-eslint'),
-  }),
+  },
   eslintPlugins: {
     flowtype: flowtypePlugin,
   },

@@ -1,6 +1,6 @@
 {
   "name": "raureif-flow",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
     "build": "raureif build",
     "start": "raureif serve",
@@ -22,14 +22,13 @@
     "yarn": "^0.27.5"
   },
   "peerDependency": {
-    "raureif": ">= 2.0.3"
+    "raureif": ">= 2.0.4"
   },
   "license": "MIT",
   "dependencies": {
     "babel-eslint": "^7.2.3",
     "babel-preset-flow": "^6.23.0",
-    "broccoli-flow": "chrmod/broccoli-flow#0.3.0",
-    "eslint-config-airbnb-flow": "^1.0.2",
+    "broccoli-flow": "chrmod/broccoli-flow#file-name",
     "eslint-plugin-flowtype": "^2.35.1"
   }
 }
