@@ -1,6 +1,6 @@
 {
   "name": "raureif-flow",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "scripts": {
     "build": "raureif build",
     "start": "raureif serve",
@@ -27,7 +27,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-eslint": "^7.2.3",
-    "babel-preset-flow": "^6.23.0",
+    "babel-preset-flow-syntax": "^1.0.1",
     "broccoli-flow": "chrmod/broccoli-flow#file-name",
     "eslint-plugin-flowtype": "^2.35.1"
   }

@@ -1,4 +1,3 @@
-import flowPreset from 'babel-preset-flow';
 import FlowFilter from 'broccoli-flow';
 import flowtypePlugin from 'eslint-plugin-flowtype';
 
@@ -6,11 +5,10 @@ export default {
   babelOptions: {
     filterExtensions: ['js'],
     presets: [
-      flowPreset,
+      require.resolve('babel-preset-flow-syntax'),
     ],
   },
   eslintOptions: {
-    // TODO: find a better way to set parser
     parser: require.resolve('babel-eslint'),
   },
   eslintPlugins: {
